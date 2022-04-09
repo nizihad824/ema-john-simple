@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Inventory = () => {
+const About = () => {
     return (
         <div>
-            <h1>this is inventory</h1>
+            <h1>This is about</h1>
             
         </div>
     );
 };
 
-export default Inventory;
+export default About;
