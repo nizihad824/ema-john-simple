@@ -7,21 +7,19 @@ const SignUp = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
 
-
-
-    const handleEmailBlur = event =>{
+ const handleEmailBlur = event =>{
         setEmail(event.target.value);
     }
 
-    const handlePasswordBlur = event =>{
+   const handlePasswordBlur = event =>{
         setPassword(event.target.value);
     }
 
-    const handleConfirmPasswordBlur = event =>{
+     const handleConfirmPasswordBlur = event =>{
         setConfirmPassword(event.target.value);
     }
 
-  const handleCreateUser = event =>{
+   const handleCreateUser = event =>{
         event.preventDefault();
         if(password !== confirmPassword){
             setError('Your two passwords did not match');
@@ -31,14 +29,9 @@ const SignUp = () => {
             setError('Password must be 6 characters or longer');
             return;
         }
-        
-       
     }
 
-    
-
-  
-    return (
+     return (
         <div className='form-container'>
             <div>
                 <h2 className='form-title'>Sign Up</h2>
@@ -67,4 +60,9 @@ const SignUp = () => {
     );
 };
 
+
+    
+
+  
+ 
 export default SignUp;
