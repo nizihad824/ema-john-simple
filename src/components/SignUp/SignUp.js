@@ -21,9 +21,7 @@ const SignUp = () => {
         setConfirmPassword(event.target.value);
     }
 
-  
-
-    const handleCreateUser = event =>{
+  const handleCreateUser = event =>{
         event.preventDefault();
         if(password !== confirmPassword){
             setError('Your two passwords did not match');
@@ -36,6 +34,8 @@ const SignUp = () => {
         
        
     }
+
+    
 
   
     return (
